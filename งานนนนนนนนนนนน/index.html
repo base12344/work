@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        body {
+      height: 100vh;
+      margin: 0;
+      transition: background-color 0.5s;
+
+          body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .info-box {
+      background-color: lightgreen;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 800px;
+      line-height: 1;
+    }
+    }
+
+    
+</style>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <script>
+    let r = 255;
+    let g = 0;
+    let b = 0;
+
+    function changeColor() {
+      // เปลี่ยนค่า RGB ตามต้องการ
+      r = (r + 5) % 256;
+      g = (g + 3) % 256;
+      b = (b + 1) % 256;
+
+      document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+
+    setInterval(changeColor, 50); // เปลี่ยนทุก 50 มิลลิวินาที
+  </script>
+
+
+
+<table border="0" width="100%" height="100%">
+    
+<tr>
+
+    <th colspan="2" bgcolor="lightblue"><font size="8">ประวัติส่วนตัว</font></th>
+
+
+</tr>
+<tr>
+
+    <td width="150px" bgcolor="gray">
+        <a href="index.html">หน้าแรก</a><br>
+        <a href="history.html">ประวัติส่วนตัว</a><br>
+        <a href="study.html">ประวัติการศึกษา</a><br>
+        <a href="play.html">ผลงาน</a><br>
+        <a href="https://www.google.com">ค้นหาเพิ่มเติม</a><br>
+    </td>
+    
+    <td bgcolor="white">
+
+                <div class="info-box">
+        <font size="5"><b>กราบสวัสดีพ่อแม่พี่น้อง</b></font><br>
+        <br>
+        <font size="5">กระผม นาย ตะวัน ตันศิริ</font><br>
+        <font size="5">และนี่คือเว็บประวัติส่วนตัวของผม</font><br>
+        <center><img src="img/img1.jpg" width="200px"/></center>
+      </div>
+    </td>
+    
+    <!-- ---------------------------------------------------------------------------------- -->
+<tr>
+
+    <td 
+    
+    colspan="2" bgcolor="#FF0066"><center>ข้อมูลเพิ่มเติม:
+        <a href="https://www.facebook.com/Tawon.tansiri">Facebook</a>
+    </center>
+    </td>
+</tr>
+
+
+    <!-- ---------------------------------------------------------------------------------- -->
+</table>
+
+</body>
+</html>
