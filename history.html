@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        body {
+      height: 100vh;
+      margin: 0;
+      transition: background-color 0.5s; /* ให้สีเปลี่ยนแบบนุ่มนวล */
+
+          body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .info-box {
+      background-color: lightgreen;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      line-height: 1.7;
+    }
+    }
+
+    
+</style>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <script>
+    let r = 255;
+    let g = 0;
+    let b = 0;
+
+    function changeColor() {
+      // เปลี่ยนค่า RGB ตามต้องการ
+      r = (r + 5) % 256;
+      g = (g + 3) % 256;
+      b = (b + 1) % 256;
+
+      document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+
+    setInterval(changeColor, 50); // เปลี่ยนทุก 50 มิลลิวินาที
+  </script>
+
+
+
+<table border="0" width="100%" height="100%">
+    
+<tr>
+
+    <th colspan="2" bgcolor="lightblue"><font size="8">ประวัติส่วนตัว</font></th>
+
+
+</tr>
+<tr>
+
+    <td width="150px" bgcolor="gray">
+        <a href="index.html">หน้าแรก</a><br>
+        <a href="history.html">ประวัติส่วนตัว</a><br>
+        <a href="study.html">ประวัติการศึกษา</a><br>
+        <a href="play.html">ผลงาน</a><br>
+        <a href="https://www.google.com">ค้นหาเพิ่มเติม</a><br>
+    </td>
+    
+    <td bgcolor="white">
+
+            <font size="8"><b>ข้อมูลส่วนตัว</b></font>
+
+      <div class="info-box">
+        <p><strong>ชื่อ:</strong> นายตะวัน ตันศิริ</p>
+        <p><strong>วันเกิด:</strong> วันเสาร์ ที่ 31 เดือนพฤษภาคม พ.ศ. 2546</p>
+        <p><strong>ที่อยู่:</strong> บ้านเลขที่ 466/58 ตำบลท่าอิฐ อำเภอเมือง จังหวัดอุตรดิตถ์</p>
+        <p><strong>งานอดิเรก:</strong> เล่นเกมคอมพิวเตอร์,ดูการ์ตูน,ต่อกันดั้ม</p>
+        <p><strong>อาชีพในฝัน:</strong> ยังไม่ได้คิด แต่มีแน่นอน</p>
+      </div>
+
+        
+    </td>
+   
+    
+    <!-- ---------------------------------------------------------------------------------- -->
+<tr>
+
+    <td
+    
+    colspan="2" bgcolor="#FF0066"><center>ข้อมูลเพิ่มเติม:
+        <a href="https://www.facebook.com/Tawon.tansiri">Facebook</a>
+    </center>
+    </td>
+</tr>
+
+
+    <!-- ---------------------------------------------------------------------------------- -->
+</table>
+
+</body>
+</html>
